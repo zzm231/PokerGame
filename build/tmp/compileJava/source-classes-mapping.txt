@@ -1,7 +1,7 @@
 PokerType.java
  PokerType
-MyClass.java
- MyClass
+Constant.java
+ Constant
 Poker.java
  Poker
 PlayerManager.java
@@ -10,9 +10,9 @@ Utils.java
  Utils
 Player.java
  Player
-GameCenter.java
- GameCenter
 PokerManager.java
  PokerManager
-Constant.java
- Constant
+MyClass.java
+ MyClass
+GameCenter.java
+ GameCenter

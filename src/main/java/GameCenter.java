@@ -42,12 +42,13 @@ public class GameCenter {
                     //弃牌
                     System.out.println(player.id+"号玩家"+player.name+"弃牌");
                     player.hasDisCard = true;
+                    manager.changeNext();
                     break;
                 default:
                     //下注
-                    System.out.print("请输入下注金额");
                     if (isFirst) {
                         while (true) {
+                            System.out.println("请输入下注金额");
                             betMoney = Utils.getInput();
 
                             int result = player.bet(betMoney);
@@ -75,9 +76,10 @@ public class GameCenter {
                     break;
             }
 
-            if (flag == true){
+            if (flag == false){
                 //计算当前有多少人可以参与
                 int available = manager.leftPlayerCount();
+
                 if (available == 1){
                     manager.changeNext();
                     Player winner = manager.currentPlayer();
