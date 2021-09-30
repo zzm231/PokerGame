@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Utils {
     //如果不需要保存数据 没有成员变量
     //提供静态方法 访问方便
@@ -19,5 +21,11 @@ public class Utils {
 
         //判断是否需要换行
         System.out.print(lineBreak?"\n":"");
+    }
+
+    //接受用户输入
+    public static int getInput(){
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
     }
 }
